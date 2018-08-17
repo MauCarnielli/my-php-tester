@@ -2,8 +2,7 @@
 	$method = $_SERVER['REQUEST_METHOD'];
 
 	if($method == 'POST'){
-		echo "Deu certo esse outro POST!";
-		$requestBody = file('php://input');
+		$requestBody = file('https://passreset-sap-robot.herokuapp.com/');
 		$json = json_decode($requestBody);
 		echo $json;
 	}else{
