@@ -6,7 +6,7 @@
 		$requestBody = file_get_contents('php://input');
 		$json = json_decode($requestBody);
 		$id = $json->id;
-		echo "Deu certo. O ID é -> ".$id;
+		echo $json;
 	}else{
 		echo "huuummmm.. Não deu.";
 	}	
