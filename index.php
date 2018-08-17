@@ -1,9 +1,9 @@
 <?php
 	$method = $_SERVER['REQUEST_METHOD'];
-	
+
 	if($method == 'POST'){
-		echo "deu certo!"
+		echo "heeeeeeeeeeeeeeey";
 	}else{
-		echo "oi?"
-	}
+		echo "huuummmm.....";
+	}	
 ?>
