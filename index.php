@@ -3,7 +3,7 @@
 
 	if($method == 'POST'){
 		$requestBody = file('php://input');
-		$json = json_decode($requestBody);
+		$json = json_decode(var_dump($requestBody[0]));
 		echo 'Segundo post deu certo';
 		var_dump($json);
 	}else{
