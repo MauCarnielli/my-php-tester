@@ -3,7 +3,8 @@
 
 	if($method == 'POST'){
 		$requestBody = file_get_contents('php://input');
-		echo 'Segundo post deu certo -> '.var_dump($requestBody[1]);
+		echo 'Segundo post deu certo -> ';
+		var_dump($requestBody);
 	}else{
 		echo "huuummmm.. Não deu.";
 	}	
