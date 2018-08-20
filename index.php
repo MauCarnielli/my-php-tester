@@ -5,7 +5,7 @@
 		$requestBody = file('php://input');
 		$json = json_decode($requestBody);
 		echo 'Segundo post deu certo';
-		echo $requestBody;
+		var_dump($requestBody);
 	}else{
 		echo "huuummmm.. Não deu.";
 	}	
