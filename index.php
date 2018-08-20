@@ -3,8 +3,8 @@
 
 	if($method == 'POST'){
 		$requestBody = file('php://input');
-		//$json = json_decode($requestBody);
-		var_dump($requestBody[0]);
+		$json = json_decode($requestBody);
+		echo $json;
 	}else{
 		echo "huuummmm.. Não deu.";
 	}	
