@@ -1,10 +1,9 @@
 <?php
 	$method = $_SERVER['REQUEST_METHOD'];
-
 	if($method == 'POST'){
-		$requestBody = file_get_contents('php://input');
-		echo 'Segundo post deu certo -> ';
-		var_dump($requestBody);
+		$requestBody = file('php://input');
+		$json = json_decode($requestBody);
+		echo $json;
 	}else{
 		echo "huuummmm.. Não deu.";
 	}	
