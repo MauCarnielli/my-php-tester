@@ -4,7 +4,7 @@
 	if($method == 'POST'){
 		$requestBody = file('php://input');
 		$json = json_decode($requestBody);
-		echo $json;
+		echo $json->id;
 	}else{
 		echo "huuummmm.. Não deu.";
 	}	
